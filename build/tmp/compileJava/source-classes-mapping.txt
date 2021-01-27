@@ -1,0 +1,6 @@
+jp/tkm/reversi/Board.java
+ jp.tkm.reversi.Board
+jp/tkm/reversi/State.java
+ jp.tkm.reversi.State
+jp/tkm/reversi/Main.java
+ jp.tkm.reversi.Main

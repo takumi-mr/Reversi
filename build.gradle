@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'distribution'
+}
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile 'junit:junit:4.12'
+}
+
+group 'jp.tkm'
+version '1.0-SNAPSHOT'
+applicationName = 'Reversi'
+mainClassName = 'jp.tkm.reversi.Main'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+run {
+    standardInput = System.in
+}
